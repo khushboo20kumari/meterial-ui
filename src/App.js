@@ -65,11 +65,13 @@
 // };
 // export default App;
 
-import Selectoption from "./Select";
+// import Selectoption from "./Select";
+import SelectArray from "./SelectArray";
 function App(){
    return(
       <>
-      <Selectoption/>
+      {/* <Selectoption/> */}
+      <SelectArray/>
       </>
    )
 }

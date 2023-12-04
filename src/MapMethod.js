@@ -110,13 +110,12 @@
 
 
 import React, { useEffect, useState } from "react";
-
 const MapMethod = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [data, setData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
 
-    const handleClick = () => {
+    const FetchData = () => {
         fetch("http://localhost:3000/userTask")
             .then((res) => res.json())
             .then((res) => {
@@ -127,18 +126,20 @@ const MapMethod = () => {
 
     const handleInputChange = (e) => {
         setSearchTerm(e.target.value);
-        filterData(searchTerm);
+        
+    };
+    const HandleData= () => {
+
+        setSearchTerm("")
+        const filtered = data.filter((record) => {
+            return record.userName.toLowerCase().includes(searchTerm.toLowerCase());
+        });
+        setFilteredData(filtered);
     };
 
-    const filterData = (searchTerm) => {
-        const filteredResult = data.filter((item) =>
-            item.userName.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setFilteredData(filteredResult);
-    };
 
     useEffect(() => {
-        handleClick();
+        FetchData()
     }, []);
 
     return (
@@ -151,11 +152,11 @@ const MapMethod = () => {
                     value={searchTerm}
                     onChange={handleInputChange}
                 />
+                <button onClick={HandleData}>serach</button>
 
                 {filteredData.map((item) => (
                     <p key={item.id}>{item.userName}</p>
                 ))}
-
             </div>
         </center>
     );

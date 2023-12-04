@@ -72,11 +72,13 @@
 
 // import TextField from "@mui/material";
 // import SelectArray from "./SelectArray";
-import MapMethod from "./MapMethod";
+// import MapMethod from "./MapMethod";
+import SearchBar from "./SearchBar";
 function App(){
    return(
       <>
-      <MapMethod/>
+      {/* <MapMethod/> */}
+      <SearchBar></SearchBar>
       {/* <SelectArray/> */}
       {/* <DialogForm/> */}
       {/* <Selectoption/> */}

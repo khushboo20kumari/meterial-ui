@@ -138,7 +138,7 @@ const MapMethod = () => {
     };
 
 
-    useEffect(() => {
+    useEffect(() => {               
         FetchData()
     }, []);
 

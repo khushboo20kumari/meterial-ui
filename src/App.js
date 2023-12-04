@@ -66,12 +66,21 @@
 // export default App;
 
 // import Selectoption from "./Select";
-import SelectArray from "./SelectArray";
+// import SelectArray from "./SelectArray";
+// import DialogForm from "./DialogForm";
+
+
+// import TextField from "@mui/material";
+// import SelectArray from "./SelectArray";
+import MapMethod from "./MapMethod";
 function App(){
    return(
       <>
+      <MapMethod/>
+      {/* <SelectArray/> */}
+      {/* <DialogForm/> */}
       {/* <Selectoption/> */}
-      <SelectArray/>
+      {/* <SelectArray/> */}
       </>
    )
 }

@@ -74,11 +74,13 @@
 // import SelectArray from "./SelectArray";
 // import MapMethod from "./MapMethod";
 // import SearchBar from "./SearchBar";
-import DropDown from "./DropDown";
+// import DropDown from "./DropDown";
+import MediaQuere from "./MediaQuere";
 function App(){
    return(
       <>
-      <DropDown/>
+      <MediaQuere/>
+      {/* <DropDown/> */}
       {/* <MapMethod/> */}
       {/* <SearchBar></SearchBar> */}
       {/* <SelectArray/> */}

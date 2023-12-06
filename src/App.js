@@ -6,7 +6,7 @@
 //     <div className="App">
 //       {/* <DialogForm/> */}
 //       <SetItem/>
-     
+
 //     </div>
 //   );
 // }
@@ -124,7 +124,7 @@
 //   return (
 //     <div className='App'>
 //       <Child onData={handleChildData} />
-      
+
 //       <p>Name: {name}</p>
 //       <p>Age: {age}</p>
 //     </div>
@@ -135,26 +135,37 @@
 
 
 
-import React, { useState } from 'react';
-import Child from './Child';
+// import React, { useState } from 'react';
+// import Child from './Child';
 
-const App = () => {
-  const [name, setName] = useState('');
-  const [age, setAge] = useState('');
+// const App = () => {
+//   const [name, setName] = useState('');
+//   const [age, setAge] = useState('');
 
-  const handleChildData = (childName, childAge) => {
-    setName(childName);
-    setAge(childAge);
-  };
+//   const handleChildData = (childName, childAge) => {
+//     setName(childName);
+//     setAge(childAge);
+//   };
 
+//   return (
+//     <div className='App'>
+//       <Child onData={handleChildData} />
+
+//       <p>Name: {name}</p>
+//       <p>Age: {age}</p>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+import MediaQuery from "./MediaQuere"
+function App() {
   return (
-    <div className='App'>
-      <Child onData={handleChildData} />
-      
-      <p>Name: {name}</p>
-      <p>Age: {age}</p>
+    <div className="App">
+      <MediaQuery/>
     </div>
-  );
-};
-
+  )
+}
 export default App;

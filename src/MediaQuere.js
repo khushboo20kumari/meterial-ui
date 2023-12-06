@@ -32,11 +32,10 @@
 
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
 import { red, green, blue } from '@mui/material/colors';
 
 const Root = styled('div')(({ theme }) => ({
-    margin: theme.spacing(10),
+   
     [theme.breakpoints.down('md')]: {
         backgroundColor: red[500],
     },
@@ -51,10 +50,8 @@ const Root = styled('div')(({ theme }) => ({
 export default function MediaQuery() {
     return (
         <Root>
-            <div style={{background:"pink"}}>
-                <Typography>down(md): red</Typography>
-                <Typography>up(md): blue</Typography>
-                <Typography>up(lg): green</Typography>
+            <div style={{background:"pink",width:"80%",margin:"auto"}}>
+              
             </div>
         </Root>
     );

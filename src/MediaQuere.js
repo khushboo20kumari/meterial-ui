@@ -36,7 +36,7 @@ import Typography from '@mui/material/Typography';
 import { red, green, blue } from '@mui/material/colors';
 
 const Root = styled('div')(({ theme }) => ({
-    padding: theme.spacing(10),
+    margin: theme.spacing(10),
     [theme.breakpoints.down('md')]: {
         backgroundColor: red[500],
     },

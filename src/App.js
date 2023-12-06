@@ -75,19 +75,86 @@
 // import MapMethod from "./MapMethod";
 // import SearchBar from "./SearchBar";
 // import DropDown from "./DropDown";
-import MediaQuere from "./MediaQuere";
-function App(){
-   return(
-      <>
-      <MediaQuere/>
-      {/* <DropDown/> */}
-      {/* <MapMethod/> */}
-      {/* <SearchBar></SearchBar> */}
-      {/* <SelectArray/> */}
-      {/* <DialogForm/> */}
-      {/* <Selectoption/> */}
-      {/* <SelectArray/> */}
-      </>
-   )
-}
+// import MediaQuere from "./MediaQuere";
+// function App(){
+//    return(
+//       <>
+//       <MediaQuere/>
+//       {/* <DropDown/> */}
+//       {/* <MapMethod/> */}
+//       {/* <SearchBar></SearchBar> */}
+//       {/* <SelectArray/> */}
+//       {/* <DialogForm/> */}
+//       {/* <Selectoption/> */}
+//       {/* <SelectArray/> */}
+//       </>
+//    )
+// }
+// export default App;
+
+
+
+// import Child from "./Child";
+// function App(){
+//    return(
+//       <div className="App">
+//          <Child/>
+
+//       </div>
+//    )
+// }
+// export default App;
+
+
+// import React, { useState } from 'react';
+// import Child from './Child';
+
+
+
+
+// const App = () => {
+//   let name = '';
+//   let age = '';
+
+//   const handleChildData = (childName, childAge) => {
+//     name = childName;
+//     age = childAge;
+//   };
+
+//   return (
+//     <div className='App'>
+//       <Child onData={handleChildData} />
+      
+//       <p>Name: {name}</p>
+//       <p>Age: {age}</p>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+
+import React, { useState } from 'react';
+import Child from './Child';
+
+const App = () => {
+  const [name, setName] = useState('');
+  const [age, setAge] = useState('');
+
+  const handleChildData = (childName, childAge) => {
+    setName(childName);
+    setAge(childAge);
+  };
+
+  return (
+    <div className='App'>
+      <Child onData={handleChildData} />
+      
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+    </div>
+  );
+};
+
 export default App;

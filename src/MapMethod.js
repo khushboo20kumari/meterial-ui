@@ -109,58 +109,58 @@
 
 
 
-import React, { useEffect, useState } from "react";
-const MapMethod = () => {
-    const [searchTerm, setSearchTerm] = useState('');
-    const [data, setData] = useState([]);
-    const [filteredData, setFilteredData] = useState([]);
+// import React, { useEffect, useState } from "react";
+// const MapMethod = () => {
+//     const [searchTerm, setSearchTerm] = useState('');
+//     const [data, setData] = useState([]);
+//     const [filteredData, setFilteredData] = useState([]);
 
-    const FetchData = () => {
-        fetch("http://localhost:3000/userTask")
-            .then((res) => res.json())
-            .then((res) => {
-                setData(res);
-                setFilteredData(res);
-            });
-    };
+//     const FetchData = () => {
+//         fetch("http://localhost:3000/userTask")
+//             .then((res) => res.json())
+//             .then((res) => {
+//                 setData(res);
+//                 setFilteredData(res);
+//             });
+//     };
 
-    const handleInputChange = (e) => {
-        setSearchTerm(e.target.value);
+//     const handleInputChange = (e) => {
+//         setSearchTerm(e.target.value);
         
-    };
-    const HandleData= () => {
+//     };
+//     const HandleData= () => {
 
-        setSearchTerm("")
-        const filtered = data.filter((record) => {
-            return record.userName.toLowerCase().includes(searchTerm.toLowerCase());
-        });
-        setFilteredData(filtered);
-    };
+//         setSearchTerm("")
+//         const filtered = data.filter((record) => {
+//             return record.userName.toLowerCase().includes(searchTerm.toLowerCase());
+//         });
+//         setFilteredData(filtered);
+//     };
 
 
-    useEffect(() => {               
-        FetchData()
-    }, []);
+//     useEffect(() => {               
+//         FetchData()
+//     }, []);
 
-    return (
-        <center>
-            <p>searchBar.......</p>
-            <div>
-                <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchTerm}
-                    onChange={handleInputChange}
-                />
-                <button onClick={HandleData}>serach</button>
+//     return (
+//         <center>
+//             <p>searchBar.......</p>
+//             <div>
+//                 <input
+//                     type="text"
+//                     placeholder="Search..."
+//                     value={searchTerm}
+//                     onChange={handleInputChange}
+//                 />
+//                 <button onClick={HandleData}>serach</button>
 
-                {filteredData.map((item) => (
-                    <p key={item.id}>{item.userName}</p>
-                ))}
-            </div>
-        </center>
-    );
-};
+//                 {filteredData.map((item) => (
+//                     <p key={item.id}>{item.userName}</p>
+//                 ))}
+//             </div>
+//         </center>
+//     );
+// };
 
-export default MapMethod;
+// export default MapMethod;
 

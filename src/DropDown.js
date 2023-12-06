@@ -13,14 +13,21 @@ function DropDown() {
     };
 
     useEffect(() => {
+
         fetchData();
+
     }, []);
 
     const handleChange = (e) => {
+
         const filterData = e.target.value;
-        const selectData = data.find((item) => item.id == filterData);
-        console.log(selectData, "khushbooooo");
+
+        const selectData = data.filter((item) => item.id == filterData);
+
+        // console.log(selectData, "khushbooooo");
+
         setSearch(selectData);
+
     };
 
     useEffect(() => {

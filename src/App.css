@@ -36,7 +36,7 @@
   background-color: black;
 } */
 
-
+/* 
 .box{
   height: 200px;
   width: 50%;
@@ -46,5 +46,21 @@
   background-color: black;
   width: 50%;
   height: 200px;
-  opacity: 0.10;
+  opacity: 0.3;
+} */
+
+
+ 
+.box{
+  height: 200px;
+  width: 50%;
+  background-color: red;
+  transition-property:width;
+  transition-duration: 2s;
 }
+.box:hover{
+  background-color: black;
+  width: 70%;
+  height: 200px;
+  opacity: 0.3;
+} 

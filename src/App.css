@@ -1,4 +1,4 @@
-.button-1 {
+/* .button-1 {
   background-color: transparent;
   border: 3px solid #00d7c3;
   border-radius: 50px;
@@ -6,7 +6,45 @@
   transition: all .15s ease-in-out;
   color: #00d7c3;
 }
+
 .button-1:hover {
   box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
   border: 3px solid #00d7c3;
+}
+
+.hoverbox {
+  width: 60%;
+  height: 200px;
+  background-color: red;
+}
+.hoverbox:hover{
+  height: 60%;
+  width: 200px;
+  background-color: #00d7c3;
+} */
+
+/* 
+.cardbox{
+  height: 200px;
+  width: 50%;
+  background-color: red;
+}
+.cardbox:hover{
+  color: pink;
+  height: 200px;
+  width: 50%;
+  background-color: black;
+} */
+
+
+.box{
+  height: 200px;
+  width: 50%;
+  background-color: red;
+}
+.box:hover{
+  background-color: black;
+  width: 50%;
+  height: 200px;
+  opacity: 0.10;
 }

@@ -1,6 +1,7 @@
 // // import DialogForm from './DialogForm';
 // import { Table } from '@material-ui/core';
 import './App.css';
+// import Hover from './HoverBox';
 
 // import SetItem from './LocalStorage/SetItem';
 // function App() {
@@ -165,13 +166,17 @@ import './App.css';
 
 // import Index from './Index';
 // import TableData from './TableData';
-import Opacity from './Opacity';
+// import Opacity from './Opacity';
+// import HoveBox from "./HoverBox"
+import HoverBox from './HoverBox';
 function App() {
   return (
     <div className="App">
+      <HoverBox/>
+      {/* <HoverBox/> */}
       {/* <Index/> */}
       {/* <TableData/> */}
-      <Opacity/>
+      {/* <Opacity/> */}
       
     </div>
   )

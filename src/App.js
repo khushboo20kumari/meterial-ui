@@ -1,5 +1,7 @@
 // // import DialogForm from './DialogForm';
-// import './App.css';
+// import { Table } from '@material-ui/core';
+import './App.css';
+
 // import SetItem from './LocalStorage/SetItem';
 // function App() {
 //   return (
@@ -160,11 +162,17 @@
 // export default App;
 
 
-import MediaQuery from "./MediaQuere"
+
+// import Index from './Index';
+// import TableData from './TableData';
+import Opacity from './Opacity';
 function App() {
   return (
     <div className="App">
-      <MediaQuery/>
+      {/* <Index/> */}
+      {/* <TableData/> */}
+      <Opacity/>
+      
     </div>
   )
 }

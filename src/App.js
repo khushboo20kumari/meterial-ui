@@ -168,11 +168,13 @@ import './App.css';
 // import TableData from './TableData';
 // import Opacity from './Opacity';
 // import HoveBox from "./HoverBox"
-import HoverBox from './HoverBox';
+// import HoverBox from './HoverBox';
+import SideBar from './SideBar';
 function App() {
   return (
     <div className="App">
-      <HoverBox/>
+      <SideBar/>
+      {/* <HoverBox/> */}
       {/* <HoverBox/> */}
       {/* <Index/> */}
       {/* <TableData/> */}

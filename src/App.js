@@ -169,11 +169,13 @@ import './App.css';
 // import Opacity from './Opacity';
 // import HoveBox from "./HoverBox"
 // import HoverBox from './HoverBox';
-import SideBar from './SideBar';
+// import SideBar from './SideBar';
+import BoxGrid from "./Box"
 function App() {
   return (
     <div className="App">
-      <SideBar/>
+      <BoxGrid/>
+      {/* <SideBar/> */}
       {/* <HoverBox/> */}
       {/* <HoverBox/> */}
       {/* <Index/> */}

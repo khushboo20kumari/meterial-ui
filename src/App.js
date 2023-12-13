@@ -170,11 +170,13 @@ import './App.css';
 // import HoveBox from "./HoverBox"
 // import HoverBox from './HoverBox';
 // import SideBar from './SideBar';
-import BoxGrid from "./Box"
+// import BoxGrid from "./Box"
+import SideBar from './UseMediaQuere';
 function App() {
   return (
     <div className="App">
-      <BoxGrid/>
+      <SideBar/>
+      {/* <BoxGrid/> */}
       {/* <SideBar/> */}
       {/* <HoverBox/> */}
       {/* <HoverBox/> */}

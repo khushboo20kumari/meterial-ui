@@ -171,11 +171,13 @@ import './App.css';
 // import HoverBox from './HoverBox';
 // import SideBar from './SideBar';
 // import BoxGrid from "./Box"
-import SideBar from './UseMediaQuere';
+// import SideBar from './UseMediaQuere';
+import Breakpoint from './Breakpoint';
 function App() {
   return (
     <div className="App">
-      <SideBar/>
+      <Breakpoint/>
+      {/* <SideBar/> */}
       {/* <BoxGrid/> */}
       {/* <SideBar/> */}
       {/* <HoverBox/> */}
